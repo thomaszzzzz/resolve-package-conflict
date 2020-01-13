@@ -21,6 +21,12 @@
     </repositories>
     <dependencies>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.1.8.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>com.github.hcsp</groupId>
             <artifactId>test-library-a</artifactId>
             <version>0.4</version>
@@ -38,7 +44,6 @@
             <version>5.4.2</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
