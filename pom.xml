@@ -20,6 +20,7 @@
         </repository>
     </repositories>
     <dependencies>
+
         <dependency>
             <groupId>com.github.hcsp</groupId>
             <artifactId>test-library-a</artifactId>
