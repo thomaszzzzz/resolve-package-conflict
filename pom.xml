@@ -12,13 +12,45 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>alimaven</id>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-        </repository>
-    </repositories>
+    <profiles>
+        <profile>
+            <id>aliyunMavenMirror</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>alimaven</id>
+                    <name>aliyun maven</name>
+                    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+                </pluginRepository>
+            </pluginRepositories>
+            <repositories>
+                <repository>
+                    <id>alimaven</id>
+                    <name>aliyun maven</name>
+                    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+                </repository>
+            </repositories>
+        </profile>
+        <profile>
+            <id>mavenCentral</id>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>mavenCentral</id>
+                    <name>mavenCentral</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </pluginRepository>
+            </pluginRepositories>
+            <repositories>
+                <repository>
+                    <id>mavenCentral</id>
+                    <name>mavenCentral</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -44,13 +76,6 @@
             <version>5.6.0</version>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>4.3.6.RELEASE</version>
-        </dependency>
-
     </dependencies>
 
     <build>
