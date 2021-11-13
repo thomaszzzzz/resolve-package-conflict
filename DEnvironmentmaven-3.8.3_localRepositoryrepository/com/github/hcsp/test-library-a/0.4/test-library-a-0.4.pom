@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.hcsp</groupId>
+  <artifactId>test-library-a</artifactId>
+  <version>0.4</version>
+  <name>test-library-a</name>
+  <description>A library for quiz</description>
+  <url>https://github.com/hcsp/test-library-a</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>blindpirate</id>
+      <name>Bo Zhang</name>
+      <email>zhangbodut@gmail.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/hcsp/test-library-a.git</connection>
+    <developerConnection>scm:git:git@github.com:hcsp/test-library-a.git</developerConnection>
+    <url>https://github.com/hcsp/test-library-a</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>4.3.6.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
